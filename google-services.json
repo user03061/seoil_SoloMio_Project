@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "100924828424",
+    "firebase_url": "https://solomio-52aa1-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "solomio-52aa1",
+    "storage_bucket": "solomio-52aa1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:100924828424:android:6c084a8ed67c5862799abd",
+        "android_client_info": {
+          "package_name": "com.example.commuset"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzFurVCABpLVieiX_oNmtUctqDODQRImg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:100924828424:android:92461f9109fe7d1d799abd",
+        "android_client_info": {
+          "package_name": "com.example.commuuu"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzFurVCABpLVieiX_oNmtUctqDODQRImg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

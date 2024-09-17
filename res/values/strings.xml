@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">commuuu</string>
+    <string name="camera">사진</string>
+    <string name="smile">이모티콘</string>
+    <string name="link">url</string>
+    <string name="file">파일</string>
+    <string name="settings">설정</string>
+
+    <string name="deliveryText">배송현황</string>
+    <string name="eclipseDeliveryText">배송 중</string>
+    <string name="itemNameText">상품 명</string>
+    <string name="itemNameValue">카드지갑 케이스</string>
+    <string name="senderText">보내는분</string>
+    <string name="senderName">김진*</string>
+    <string name="recipientText">받는분</string>
+    <string name="recipientName">정현*</string>
+    <string name="deliveryAddressText">배송지점</string>
+    <string name="homeAddressText">서울특별시 광진구 자양동 이튼타워 리버2차</string>
+    <string name="orderDetailsText">주문상세</string>
+    <string name="orderNumber">주문번호 9010101030</string>
+    <string name="orderDate">2024.5.20.주문</string>
+    <string name="receipCredit">결제 정보</string>
+    <string name="itemPrice">상품 가격</string>
+    <string name="requirements">배송요청사항 : 경비실에 보내주세요.</string>
+</resources>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/image_5"
+        android:layout_width="245dp"
+        android:layout_height="164dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/testimg2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="158dp" />
+
+    <TextView
+        android:id="@+id/readingText"
+        android:layout_width="414dp"
+        android:layout_height="410dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="32dp"
+        android:gravity="top"
+        android:letterSpacing="-0.02"
+        android:lineSpacingExtra="-2sp"
+        android:text="제품상태 : 새물품 (미사용)\n 색상 변경 가능합니당
+        (추가비용 없음)\n 주문제작은 원하시는 분위기나 사진 보여주시면\n
+         맞춰서 만들어드려요!!\n
+          (주문제작 18000원---》 15000원 무료배송으로\n
+           할인중입니당) 주문 후 제작, 배송까지 7일~10일 소요됩니다!\n
+            \n무료배송입니다\n
+             그라데이션제품은 12000원입니당\n
+              3번째 사진과 같은 제품은 15000원입니당"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_5" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="338dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:text="자체 제작 폰 케이스 팝니다~!"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="8dp"
+        android:text="다이아몬드"
+        app:layout_constraintEnd_toStartOf="@+id/textView9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="66dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="8dp"
+        android:text="  황인찬"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="274dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="64dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
