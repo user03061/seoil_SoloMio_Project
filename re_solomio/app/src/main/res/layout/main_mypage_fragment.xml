@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/profile_card"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.769"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="360dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+
+                        <Button
+                            android:id="@+id/mypage_reviewbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/mypage_button_style1"
+                            android:text="리뷰"
+                            tools:layout_editor_absoluteX="103dp" />
+
+                        <Button
+                            android:id="@+id/mypage_couponbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/mypage_button_style1"
+                            android:text="쿠폰"
+                            tools:layout_editor_absoluteX="198dp"
+                            tools:layout_editor_absoluteY="5dp" />
+
+                        <Button
+                            android:id="@+id/mypage_mydesignbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/mypage_button_style1"
+                            android:text="내 디자인"
+                            tools:layout_editor_absoluteX="276dp"
+                            tools:layout_editor_absoluteY="3dp" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/mypage_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="32dp"
+                    android:text="ID : "
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/mypage_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:text="Email : "
+                    app:layout_constraintStart_toStartOf="@+id/mypage_id"
+                    app:layout_constraintTop_toBottomOf="@+id/mypage_id" />
+
+                <TextView
+                    android:id="@+id/mypage_id_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="9dp"
+                    android:text="삽살개"
+                    app:layout_constraintStart_toEndOf="@+id/mypage_id"
+                    app:layout_constraintTop_toTopOf="@+id/mypage_id" />
+
+                <TextView
+                    android:id="@+id/mypage_email_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="9dp"
+                    android:text="thek****@naver.com"
+                    app:layout_constraintStart_toEndOf="@+id/mypage_email"
+                    app:layout_constraintTop_toTopOf="@+id/mypage_email" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:id="@+id/mypage_settingbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="1"
+        android:background="@drawable/mypage_button_style2"
+        android:text="설정"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+        <TextView
+            android:id="@+id/mypage_recent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="최근 본 작품"
+            app:layout_constraintStart_toStartOf="@+id/profile_card"
+            app:layout_constraintTop_toBottomOf="@+id/profile_card" />
+
+        <HorizontalScrollView
+            android:id="@+id/mypage_ScrollView"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="@+id/mypage_recent"
+            app:layout_constraintTop_toBottomOf="@+id/mypage_recent"
+            android:contentDescription="mypage_scrollview">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/mypage_image1"
+                    android:layout_width="195dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/mypage_griptok" />
+
+                <ImageView
+                    android:id="@+id/mypage_image2"
+                    android:layout_width="195dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/mypage_airpods" />
+
+                <ImageView
+                    android:id="@+id/mypage_image3"
+                    android:layout_width="195dp"
+                    android:layout_height="match_parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/mypage_airpods2" />
+
+                <ImageView
+                    android:id="@+id/mypage_image4"
+                    android:layout_width="195dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/home_excase2" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

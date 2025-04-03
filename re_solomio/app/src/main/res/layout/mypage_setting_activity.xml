@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/setting_toolbar"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:background="#FBE287"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:title="설정"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:weightSum="7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setting_toolbar">
+
+
+        <Button
+            android:id="@+id/setting_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/setting_button_style"
+            android:gravity="left|center_vertical"
+            android:text="   회원정보 수정" />
+
+        <Button
+            android:id="@+id/setting_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/setting_button_style"
+            android:gravity="left|center_vertical"
+            android:text="   비밀번호 변경" />
+
+        <Button
+            android:id="@+id/setting_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/setting_button_style"
+            android:gravity="left|center_vertical"
+            android:text="   배송지 관리" />
+
+        <Button
+            android:id="@+id/setting_bank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/setting_button_style"
+            android:gravity="left|center_vertical"
+            android:text="   환불계좌 관리" />
+
+        <Button
+            android:id="@+id/setting_notice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/setting_button_style"
+            android:gravity="left|center_vertical"
+            android:text="   알림 설정" />
+
+        <Button
+            android:id="@+id/setting_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/setting_button_style"
+            android:gravity="left|center_vertical"
+            android:text="   간편 로그인 설정" />
+
+        <Button
+            android:id="@+id/setting_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/setting_button_style"
+            android:gravity="left|center_vertical"
+            android:text="   로그아웃" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

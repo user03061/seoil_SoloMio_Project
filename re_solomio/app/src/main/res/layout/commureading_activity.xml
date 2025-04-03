@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#FBE287"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- 하단 흰색 바 -->
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/readTitle"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/category_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="카테고리: 일반"
+            android:textColor="#0000FF"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/like_button"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Like"
+            android:src="@drawable/like" />
+
+        <ImageButton
+            android:id="@+id/cummunity_zzim_button"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/community_heart_icon"
+            android:contentDescription="zzim"/>
+
+        <ImageButton
+            android:id="@+id/downloadIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Save"
+            android:src="@drawable/cloudicon" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/readTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="top"
+        android:letterSpacing="-0.01"
+        android:lineSpacingExtra="-16sp"
+        android:text="자체제작 폰케이스 팝니다~!"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/commuReading_imageSet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <TextView
+            android:id="@+id/some_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:letterSpacing="0.02"
+            android:lineSpacingExtra="-6sp"
+            android:text="사용자"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/viewsCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:lineSpacingExtra="4sp"
+            android:text="2024.05.23 . 13:38 조회수:38 좋아요:12"
+            android:textColor="@color/black"
+            android:translationY="-2.15sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/commuReading_imageSet"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/noimage_set"
+        app:layout_constraintBottom_toTopOf="@+id/readingText"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/readingText"
+        android:layout_width="match_parent"
+        android:layout_height="303dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="16dp"
+        android:gravity="top"
+        android:letterSpacing="-0.02"
+        android:lineSpacingExtra="-2sp"
+        android:text="textView"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

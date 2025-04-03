@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/membership_toolbar"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:background="#FBE287"
+        app:title="회원 정보 수정"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ms_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="이메일"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/membership_toolbar" />
+
+    <EditText
+        android:id="@+id/ms_email_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/ms_email"
+        app:layout_constraintTop_toBottomOf="@+id/ms_email" />
+
+    <TextView
+        android:id="@+id/ms_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="이름"
+        app:layout_constraintStart_toStartOf="@+id/ms_email_text"
+        app:layout_constraintTop_toBottomOf="@+id/ms_email_text" />
+
+    <EditText
+        android:id="@+id/ms_name_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/ms_name"
+        app:layout_constraintTop_toBottomOf="@+id/ms_name" />
+
+    <TextView
+        android:id="@+id/ms_nick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="닉네임"
+        app:layout_constraintStart_toStartOf="@+id/ms_name_text"
+        app:layout_constraintTop_toBottomOf="@+id/ms_name_text" />
+
+    <EditText
+        android:id="@+id/ms_nick_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/ms_nick"
+        app:layout_constraintTop_toBottomOf="@+id/ms_nick" />
+
+    <TextView
+        android:id="@+id/ms_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="휴대폰 번호"
+        app:layout_constraintStart_toStartOf="@+id/ms_nick_text"
+        app:layout_constraintTop_toBottomOf="@+id/ms_nick_text" />
+
+    <EditText
+        android:id="@+id/ms_num_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/ms_num"
+        app:layout_constraintTop_toBottomOf="@+id/ms_num" />
+
+    <TextView
+        android:id="@+id/ms_birth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="생년월일"
+        app:layout_constraintStart_toStartOf="@+id/ms_num_text"
+        app:layout_constraintTop_toBottomOf="@+id/ms_num_text" />
+
+    <EditText
+        android:id="@+id/ms_birth_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/ms_birth"
+        app:layout_constraintTop_toBottomOf="@+id/ms_birth" />
+
+    <Button
+        android:id="@+id/ms_save_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="저장하기"
+        android:background="#FBE287"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

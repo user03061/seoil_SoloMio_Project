@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="deliveryText">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="eclipseDeliveryText">
+        <item name="android:textColor">#FF6363</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="itemName">
+        <item name="android:background">#FDE17B</item>
+    </style>
+
+    <style name="orderNumber">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="orderDate">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="receipCredit">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="itemPrice">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="requirements">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#6200EE</item>
+        <item name="colorPrimaryDark">#3700B3</item>
+        <item name="colorAccent">#03DAC5</item>
+    </style>
+
+    <!-- 버튼 스타일 정의 -->
+    <style name="CustomButton">
+        <item name="android:backgroundTint">#FDE17B</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/jalnan</item>
+    </style>
+
+    <style name="CategoryButton">
+        <item name="android:backgroundTint">#FDE17B</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/jalnan</item>
+    </style>
+
+    <!-- 선택된 카테고리 버튼 스타일 -->
+    <style name="SelectedCategoryButton">
+        <item name="android:backgroundTint">#CDA619</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/jalnan</item>
+
+    </style>
+</resources>

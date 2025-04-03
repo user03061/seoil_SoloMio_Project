@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_design"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DesignActivity">
+
+    <!-- 상단 메뉴 -->
+    <LinearLayout
+        android:id="@+id/top_menu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#FFF5CF"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btn_prev"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="이전"
+            android:textColor="#000000"
+            android:fontFamily="@font/jalnan"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_design"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="디자인"
+            android:textColor="#000000"
+            android:fontFamily="@font/jalnan"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_savemodel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/jalnan"
+            android:text="저장"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/design_palette"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/bottom_menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top_menu">
+        <!-- 악세서리 이미지 -->
+        <ImageView
+            android:id="@+id/iv_phone"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="centerInside"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/design_palette"
+            app:layout_constraintTop_toTopOf="@id/design_palette" />
+
+        <!-- 선택된 이미지를 위한 이미지뷰 (iv_overlay) -->
+        <ImageView
+            android:id="@+id/iv_overlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="matrix"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/design_palette"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/design_palette" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <!-- 하단 버튼 메뉴 -->
+    <LinearLayout
+        android:id="@+id/bottom_menu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#FFF5CF"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btn_my_image"
+            style="@style/CustomButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="내 이미지"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/btn_decorate"
+            style="@style/CustomButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="스티커"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/cart_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FBE287"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="장바구니" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cart_selectcard"
+        android:layout_width="411dp"
+        android:layout_height="212dp"
+        android:layout_marginTop="64dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:contentPadding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cart_toolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="381dp"
+            android:layout_height="187dp"
+            android:padding="16dp">
+
+            <CheckBox
+                android:id="@+id/cart_check1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/cart_name"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/edge"
+                android:text="에어팟 케이스/3세대"
+                android:textSize="13sp"
+                app:layout_constraintStart_toStartOf="@+id/cart_image1"
+                app:layout_constraintTop_toBottomOf="@+id/cart_image1" />
+
+            <Button
+                android:id="@+id/cart_minbtn"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:text="-"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/cart_name"
+                app:layout_constraintTop_toBottomOf="@+id/cart_name"
+                app:layout_constraintVertical_bias="0.52" />
+
+            <TextView
+                android:id="@+id/cart_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="1"
+                app:layout_constraintBottom_toBottomOf="@+id/cart_minbtn"
+                app:layout_constraintStart_toEndOf="@+id/cart_minbtn"
+                app:layout_constraintTop_toTopOf="@+id/cart_minbtn" />
+
+            <Button
+                android:id="@+id/cart_plusbtn"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="4dp"
+                android:text="+"
+                app:layout_constraintBottom_toBottomOf="@+id/cart_count"
+                app:layout_constraintStart_toEndOf="@+id/cart_count"
+                app:layout_constraintTop_toTopOf="@+id/cart_count" />
+
+            <ImageView
+                android:id="@+id/cart_image1"
+                android:layout_width="113dp"
+                android:layout_height="74dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintStart_toEndOf="@+id/cart_check1"
+                app:layout_constraintTop_toTopOf="@+id/cart_check1"
+                app:srcCompat="@drawable/zzim_airpods" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <CheckBox
+        android:id="@+id/cart_checkall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="250dp"
+        android:text="전체 상품 선택"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.121"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cart_toolbar" />
+
+    <Button
+        android:id="@+id/cart_orderbtn"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="108dp"
+        android:background="@drawable/home_button_style"
+        android:text="주문하기"
+        android:enabled="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
